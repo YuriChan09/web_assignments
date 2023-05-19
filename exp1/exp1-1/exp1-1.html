@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>木之本樱的主页</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // JavaScript 代码，实现目录链接的滚动效果
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({behavior: "smooth"});
+        }
+    </script>
+
+</head>
+<body>
+    <aside>
+        <nav id="navigation">
+            <h3>目录</h3>
+            <ul>
+                <li><a href="#profile">个人简介</a></li>
+                <li><a href="#experience">个人经历简介</a></li>
+                <li><a href="#books">个人最喜欢的4本书</a></li>
+                <li><a href="#interests">个人兴趣简介</a></li>
+                <li><a href="#grades">主干课程成绩</a></li>
+                <li><a href="#links">相关链接</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>欢迎访问木之本樱的主页</h1>
+
+        <h2 id="profile">个人简介</h2>
+        <img src="avatar.png" alt="个人照片" width="200" height="200">
+        <p>木之本樱是日本漫画家CLAMP所创作的漫画《魔卡少女樱》的主人公。她是一个阳光、活泼、善良的小学生，她在一次偶然的机会下发现了一本神秘的魔法书籍，并意外将书中的魔卡解散。为了重新收集散落在各地的魔卡，桜踏上了寻找魔卡的冒险之旅。在这个过程中，她与书中的守护者小可、朋友大道寺知世、李小狼以及其他伙伴们展开了一段美好的友谊。</p>
+        <p>在收集魔卡的过程中，桜不断地学习和成长，她通过努力和勇气一次又一次地克服困难，最终成功地将所有魔卡收集起来。木之本樱的故事不仅仅是关于冒险和成长，还体现了友情、爱情和亲情的价值。她的故事激励着许多读者，让他们相信勇气、善良和爱可以战胜一切困难。</p>
+        
+        <h2 id="experience">个人经历简介</h2>
+        <ol>
+            <li>释放魔卡：故事开始于樱在学校图书馆无意中释放了魔卡（Clow Cards）。这些卡片拥有强大的魔法力量，由魔法师克洛（Clow Reed）创造。因此，樱被基洛（Keroberos，魔卡的守护兽）指派为捕捉这些失控魔卡的任务。</li>
+            <li>遇到月（Yue）：在捕捉完所有魔卡后，樱面临了一个考验：战胜克洛的另一位守护兽——月。在经过一场艰苦的战斗后，樱成功地战胜了月，并被确认为新的魔卡主人。</li>
+            <li>魔卡变成樱卡：随着时间的推移，魔卡开始失去力量。为了挽救这些卡片，樱通过使用自己的魔法力量将它们转变为樱卡（Sakura Cards），从而确保它们的存在。</li>
+        </ol>
+
+        <h2 id="books">个人最喜欢的4本书</h2>
+        <ul>
+            <li>《克洛卡》</li>
+            <li>《魔卡少女樱》</li>
+            <li>《CLEAR CARD》</li>
+            <li>《人型电脑天使心》</li>
+        </ul>
+
+        <h2 id="interests">个人兴趣简介</h2>
+        <ul>
+            <li> 唱 </li>
+            <li> 跳 </li>
+            <li> 体操 </li>
+            <li> 收集卡片 </li>
+        </ul>
+
+        <h2 id="grades">主干课程成绩</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>课程名</th>
+                    <th>开课学期</th>
+                    <th>任课教师</th>
+                    <th>分数</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>小学数学</td>
+                    <td>2012秋季</td>
+                    <td>观月歌帆</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>小学国语</td>
+                    <td>2012春季</td>
+                    <td>观月歌帆</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>小学英语</td>
+                    <td>2012春季</td>
+                    <td>观月歌帆</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>小学科学</td>
+                    <td>2012春季</td>
+                    <td>观月歌帆</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>体育</td>
+                    <td>2012春季</td>
+                    <td>观月歌帆</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>社会</td>
+                    <td>2012春季</td>
+                    <td>观月歌帆</td>
+                    <td>93</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h2 id="links">相关链接</h2>
+        <ul>
+            <li><a href="https://ccsakura-official.com/">朋友主页</a></li>
+            <li><a href="https://ccsakura-official.com/">学校主页</a></li>
+        </ul>
+
+        <h2>其他个人想表达的信息</h2>
+        <p>小樱太可爱了❤❤❤<p>
+    </main>
+    <script src="smooth-scroll.js"></script>
+    <script src="scroll-to-top.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to book seller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>You are welcome</h1>
+        <form action="main.php" method="post">
+            <p>Please input your name: <input type="text" name="name"></p>
+            <p>Please input your address: <input type="text" name="address"></p>
+            <p>Please input your zip: <input type="text" name="zip"></p>
+            <h3>Please fill in the quantity field of the following form</h3>
+            <table>
+                <tr>
+                    <th>book</th>
+                    <th>publisher</th>
+                    <th>price</th>
+                    <th>quantity</th>
+                </tr>
+                <tr>
+                    <td>Web technology</td>
+                    <td>Springer press</td>
+                    <td>$5.0</td>
+                    <td><input type="number" name="web_technology_quantity"></td>
+                </tr>
+                <tr>
+                    <td>mathematics</td>
+                    <td>ACM press</td>
+                    <td>$6.2</td>
+                    <td><input type="number" name="mathematics_quantity"></td>
+                </tr>
+                <tr>
+                    <td>principle of OS</td>
+                    <td>Science press</td>
+                    <td>$10</td>
+                    <td><input type="number" name="os_principle_quantity"></td>
+                </tr>
+                <tr>
+                    <td>Theory of matrix</td>
+                    <td>High education press</td>
+                    <td>$7.8</td>
+                    <td><input type="number" name="matrix_theory_quantity"></td>
+                </tr>
+            </table>
+            <p>Payment method:</p>
+            <input type="radio" id="cash" name="payment" value="cash">
+            <label for="cash">cash</label><br>
+            <input type="radio" id="cheque" name="payment" value="cheque">
+            <label for="cheque">cheque</label><br>
+            <input type="radio" id="credit_card" name="payment" value="credit_card">
+            <label for="credit_card">credit card</label><br>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+</body>
+</html>

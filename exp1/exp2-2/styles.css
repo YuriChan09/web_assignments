@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F3B0B0;
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7); /* 将透明度设置为0.7 */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #3C3C3C;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #3C3C3C;
+    margin-right: 5px;
+}
+
+input[type=number] {
+    font-size: 1.2rem;
+    border: 2px solid #3C3C3C;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 10px 10px 0;
+}
+
+button {
+    font-size: 1.2rem;
+    background-color: #246DBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1A507A;
+}
+
+#result {
+    font-size: 1.2rem;
+    color: #3C3C3C;
+    margin-top: 20px;
+}

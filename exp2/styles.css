@@ -1,0 +1,79 @@
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    background-color: white;
+    color: #3C3C3C;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #E2446A;
+    border-bottom: 2px solid #E2446A;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #E2446A;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 4px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #E2446A;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F3B0B0;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #E2446A;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #F3B0B0;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 3px 5px;
+    margin: 3px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-top: 4px;
+}
+
+label {
+    font-size: 14px;
+    margin-left: 5px;
+}
