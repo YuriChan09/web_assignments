@@ -20,8 +20,7 @@ $conn->select_db($dbname);
 
 //创建 customers 表格
 $sql = "CREATE TABLE customers (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-name VARCHAR(30) NOT NULL,
+name VARCHAR(30) NOT NULL PRIMARY KEY,
 address VARCHAR(50) NOT NULL,
 zip VARCHAR(10) NOT NULL
 )";
@@ -30,8 +29,7 @@ $conn->query($sql);
 
 //创建 books 表格
 $sql = "CREATE TABLE books (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-book VARCHAR(30) NOT NULL,
+book VARCHAR(30) NOT NULL PRIMARY KEY,
 publisher VARCHAR(30) NOT NULL,
 price FLOAT(6,2) NOT NULL
 )";
@@ -40,10 +38,10 @@ $conn->query($sql);
 
 //创建 orders 表格
 $sql = "CREATE TABLE orders (
-id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(30) NOT NULL,
 book VARCHAR(30) NOT NULL,
-quantity INT(6) NOT NULL
+quantity INT(6) NOT NULL,
+PRIMARY KEY(name, book)
 )";
 
 $conn->query($sql);

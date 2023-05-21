@@ -8,6 +8,13 @@ $os_principle_quantity = $_POST['os_principle_quantity'];
 $matrix_theory_quantity = $_POST['matrix_theory_quantity'];
 $payment = $_POST['payment'];
 
+$book_publishers = [
+    'web_technology' => 'Springer press',
+    'mathematics' => 'ACM press',
+    'os_principle' => 'Science press',
+    'matrix_theory' => 'High education press'
+];
+
 $book_prices = [
     'web_technology' => 5.0,
     'mathematics' => 6.2,
@@ -27,6 +34,7 @@ foreach ($book_prices as $book => $price) {
         $total_cost += $cost;
         $order_details[] = [
             'book' => $book,
+            'publisher' => $book_publishers[$book],
             'price' => $price,
             'quantity' => $quantity,
             'cost' => $cost
@@ -34,7 +42,7 @@ foreach ($book_prices as $book => $price) {
     }
 }
 
-// Display the results
+// 显示结果界面
 echo "<!DOCTYPE html>";
 echo "<html>";
 echo "<head>";
@@ -64,10 +72,11 @@ echo "<p><strong>{$name}</strong> has bought <strong>{$total_books}</strong> boo
 echo "<p><strong>{$name}</strong> paid <strong>\${$total_cost}</strong>.</p>";
 echo "<p>Paid by <strong>{$payment}</strong>.</p>";
 echo "</div>";
+echo "<a class=\"ref\" href=\"./main.html\">RETURN</a>";
 echo "</body>";
 echo "</html>";
 
-// Save the data to a file
+// 将数据存到文件
 $file = fopen("orders.txt", "a");
 fwrite($file, "{$name} has bought {$total_books} books.\r\n");
 fwrite($file, "{$name} paid \${$total_cost}.\r\n");

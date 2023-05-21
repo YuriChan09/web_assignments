@@ -18,3 +18,43 @@ Yuri Chan has bought 6 books.
 Yuri Chan paid $41.8.
 Paid by cash.
 
+Yuri Chan has bought 36 books.
+Yuri Chan paid $261.
+Paid by credit_card.
+
+ has bought 0 books.
+ paid $0.
+Paid by .
+
+Yuri Chan has bought 10 books.
+Yuri Chan paid $78.6.
+Paid by cash.
+
+ has bought 0 books.
+ paid $0.
+Paid by .
+
+ has bought 0 books.
+ paid $0.
+Paid by .
+
+Yuri Chan has bought 8 books.
+Yuri Chan paid $58.
+Paid by cheque.
+
+Yuri Chan has bought 8 books.
+Yuri Chan paid $58.
+Paid by cheque.
+
+Yuri Chan has bought 8 books.
+Yuri Chan paid $58.
+Paid by cheque.
+
+Yuri Chan has bought 40 books.
+Yuri Chan paid $290.
+Paid by cheque.
+
+Yuri Chan has bought 40 books.
+Yuri Chan paid $290.
+Paid by cheque.
+

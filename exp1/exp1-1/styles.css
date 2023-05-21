@@ -111,13 +111,13 @@ a:hover {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     border: 2px solid #fff;
-  }
+}
   
   
   
   
-  .scroll-to-top:hover {
+.scroll-to-top:hover {
     transform: scale(1.1);
-  }
+}
   
   

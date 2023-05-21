@@ -77,3 +77,29 @@ label {
     font-size: 14px;
     margin-left: 5px;
 }
+
+.ref {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px; /* 设置按钮宽度 */
+    height: 100px; /* 设置按钮高度 */
+    padding: 10px;
+    border-radius: 20px; /* 将圆角半径修改为像素值 */
+    background-color: #F3B0B0;
+    color: #E2446A;
+    font-size: 30px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+  
+  
+.ref:hover {
+    transform: scale(1.1);
+}
