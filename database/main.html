@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>票务管理系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎使用票务管理系统</h1>
+        <!-- 插入或更新 -->
+        <form action="insert_update.php" method="post">
+            <h3>请填写需要插入或更新航班信息</h3>
+            <h3>如果航班号不存在，则插入新航班；如果航班号已存在，则更新航班信息。</h3>
+            <table>
+                <tr>
+                    <th>航班号</th>
+                    <th>起点</th>
+                    <th>终点</th>
+                    <th>日期</th>
+                    <th>起飞时刻</th>
+                    <th>到达时刻</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="id"></td>
+                    <td><input type="text" name="departure"></td>
+                    <td><input type="text" name="destination"></td>
+                    <td><input type="date" name="flight_date"></td>
+                    <td><input type="time" name="departure_time"></td>
+                    <td><input type="time" name="arrival_time"></td>
+                </tr>
+                <tr>
+                    <th>票价</th>
+                    <th>折扣票数</th>
+                    <th>剩余座位数</th>
+                    <th colspan="3">航班所属航空公司</th>
+                </tr>
+                <tr>
+                    <td><input type="number" name="ticket_price"></td>
+                    <td><input type="number" name="discount_tickets"></td>
+                    <td><input type="number" name="remaining_seats"></td>
+                    <td colspan="3"><input type="text" name="airline"></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+        <p class="border-bottom"></p>
+        <!-- 删除 -->
+        <form action="delete.php" method="post">
+            <h3>或：请填写需要删除航班号</h3>
+            <p>航班号：<input type="text" name="flight_to_delete"></p>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </form>
+    </div>
+    <a class="ref" href="./query.html">QUERY</a>
+</body>
+</html>
